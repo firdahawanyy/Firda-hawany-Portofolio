@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firda Hawany - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #fff;
+      color: #333;
+      transition: background 0.4s, color 0.4s;
+    }
+    body.dark-mode {
+      background-color: #1e1e1e;
+      color: #f5f5f5;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background-color: #f0ebe3;
+      position: relative;
+    }
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-top: 20px;
+    }
+    p.subtext {
+      font-size: 1rem;
+      margin: 10px 0;
+      color: #777;
+    }
+    .sosmed {
+      margin-top: 15px;
+    }
+    .sosmed a {
+      margin: 0 10px;
+      font-size: 1.4rem;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+    .sosmed a:hover {
+      color: #b08968;
+    }
+    #darkModeToggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #333;
+      transition: color 0.3s;
+    }
+    body.dark-mode #darkModeToggle {
+      color: #ffd700;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      padding: 12px 0;
+      background-color: #e6ccb2;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      background-color: #fff;
+      padding: 6px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #3b2f2f;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    nav a:hover {
+      background-color: #d4a373;
+      color: #fff;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #b08968;
+    }
+    .card {
+      background-color: #f9e3e3;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f0ebe3;
+      color: #333;
+    }
+    body.dark-mode nav {
+      background-color: #333;
+    }
+    body.dark-mode .card {
+      background-color: #2d2d2d;
+      color: #fff;
+    }
+    body.dark-mode nav a {
+      background-color: #444;
+      color: #f5f5f5;
+    }
+    body.dark-mode nav a:hover {
+      background-color: #666;
+    }
+    img.mc-photo {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .caption {
+      font-size: 0.95rem;
+      text-align: center;
+      margin-top: 8px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://i.imgur.com/UCi81QT.jpeg" alt="Firda's Photo" />
+  <h1>Firda Hawany</h1>
+  <p class="subtext">Nursing Student • Public Communicator • Event Host</p>
+  <div class="sosmed">
+    <a href="https://www.instagram.com/firdahawny?igsh=aG90YmUzaWQ4bDA3" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:firdahawany12@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/firda-hawany-4b1463338" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <button id="darkModeToggle">🌙</button>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="card">
+  <h2>About Me</h2>
+  <p>Hi! I'm Firda, a nursing student at Universitas Indonesia. I'm passionate about public health, event organizing, and communication. I love collaborating in student organizations and creating meaningful experiences through human-centered approaches.</p>
+</section>
+
+<section id="skills" class="card">
+  <h2>Skills</h2>
+  <ul>
+    <li>Public speaking and moderation</li>
+    <li>Creative content design (pamphlets, posters)</li>
+    <li>Collaborative project coordination</li>
+    <li>Master of Ceremony (MC) experience</li>
+  </ul>
+</section>
+
+<section id="experience" class="card">
+  <h2>Experience</h2>
+  <p><strong>Publication Staff – Olim UI 2024:</strong> Created and managed digital posters and campaign materials.</p>
+  <p><strong>Forum Moderator – Pemira FIK UI 2024:</strong> Led panel discussions and coordinated speaker sessions.</p>
+  <p><strong>Liaison Officer – Nurse 2024 (Vocal Division):</strong> Supported performers and managed communication flow.</p>
+  <p><strong>MC – Hypertension Education at Puskesmas Tugu (2025):</strong> Hosted a health event with clarity and empathy.</p>
+  <img class="mc-photo" src="https://i.imgur.com/Vw2xZuL.jpeg" alt="Firda MC">
+  <p class="caption">Hypertension Health Education – MC Role, Puskesmas Tugu 2025</p>
+</section>
+
+<section id="education" class="card">
+  <h2>Education</h2>
+  <p><strong>Universitas Indonesia</strong> (2024–Present)<br>Bachelor of Nursing – Faculty of Nursing<br>Courses: Nursing Fundamentals, Communication, Ethics, Community Health</p>
+  <p><strong>SMAN 6 Jakarta</strong> (2021–2024)<br>Science Major – Participated in various school and health events</p>
+</section>
+
+<section id="contact" class="card">
+  <h2>Contact</h2>
+  <div class="sosmed" style="font-size: 2rem; display: flex; justify-content: center; gap: 30px; margin-top: 15px;">
+    <a href="mailto:firdahawany12@gmail.com" title="Email" target="_blank"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.instagram.com/firdahawny?igsh=aG90YmUzaWQ4bDA3" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/firda-hawany-4b1463338" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Firda Hawany</p>
+</footer>
+
+<script>
+  const toggleBtn = document.getElementById("darkModeToggle");
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+  });
+
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  cards.forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
